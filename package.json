@@ -15,9 +15,7 @@
     "commitmsg": "opt --in commit-msg --exec \"validate-commit-msg\"",
     "precommit": "opt --in pre-commit --exec \"npm start validate\""
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
@@ -36,7 +34,7 @@
     "lodash.memoize": "^4.1.2",
     "loglevel-colored-level-prefix": "^1.0.0",
     "messageformat": "^1.0.2",
-    "prettier-eslint": "^6.0.0",
+    "prettier-eslint": "git://github.com/eqyiel/prettier-eslint.git#dist",
     "rxjs": "^5.3.0",
     "yargs": "^7.1.0"
   },
@@ -67,15 +65,9 @@
     "yargs-parser": "^5.0.0"
   },
   "eslintConfig": {
-    "extends": [
-      "kentcdodds",
-      "kentcdodds/jest"
-    ],
+    "extends": ["kentcdodds", "kentcdodds/jest"],
     "rules": {
-      "max-len": [
-        2,
-        80
-      ]
+      "max-len": [2, 80]
     }
   },
   "jest": {
