@@ -33,6 +33,7 @@ function formatFilesFromArgv({
   stdin,
   write,
   eslintPath,
+  eslintConfigPath,
   prettierPath,
   ignore: ignoreGlobs = [],
   eslintIgnore: applyEslintIgnore = true,
@@ -43,6 +44,7 @@ function formatFilesFromArgv({
   const prettierESLintOptions = {
     logLevel,
     eslintPath,
+    eslintConfigPath,
     prettierPath,
     prettierLast,
     prettierOptions,

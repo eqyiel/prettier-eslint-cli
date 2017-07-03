@@ -155,9 +155,12 @@ const parser = yargs
     // formats and we'd have to work out `extends` somehow as well.
     // I don't know whether ESLint exposes a way to do this...
     // Contributions welcome!
-    // eslintConfigPath: {
-    //   describe: 'Path to the eslint config to use for eslint --fix',
-    // },
+    'eslint-config-path': {
+      type: 'string',
+      default: undefined,
+      describe: 'Path to the eslint config to use for eslint --fix',
+      coerce: coercePath,
+    },
   })
   .strict()
 
